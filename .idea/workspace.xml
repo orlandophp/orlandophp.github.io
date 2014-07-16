@@ -26,165 +26,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="379d30f5-c024-432f-9763-cc2be07d73c7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/assets/jwplayer/glow/controlbar/background.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/assets/jwplayer/glow/display/background.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/images/bird_32_gray.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/images/bird_32_gray_fail.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/assets/jwplayer/glow/controlbar/blankButton.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/assets/jwplayer/glow/display/bufferIcon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/assets/jwplayer/glow/dock/button.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/images/code_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/assets/jwplayer/glow/controlbar/divider.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/images/dotted-border.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/images/email.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/assets/jwplayer/glow/sharing/embedIcon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/assets/jwplayer/glow/sharing/embedScreen.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/favicon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/assets/jwplayer/glow/controlbar/fullscreenButton.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/assets/jwplayer/glow/controlbar/fullscreenButtonOver.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/assets/jwplayer/glow/playlist/item.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/assets/jwplayer/glow/playlist/itemOver.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/images/line-tile.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/assets/jwplayer/glow/controlbar/muteButton.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/assets/jwplayer/glow/controlbar/muteButtonOver.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/assets/jwplayer/glow/display/muteIcon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/images/noise.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/assets/jwplayer/glow/controlbar/normalscreenButton.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/assets/jwplayer/glow/controlbar/normalscreenButtonOver.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/assets/jwplayer/glow/controlbar/pauseButton.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/assets/jwplayer/glow/controlbar/pauseButtonOver.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/assets/jwplayer/glow/controlbar/playButton.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/assets/jwplayer/glow/controlbar/playButtonOver.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/assets/jwplayer/glow/display/playIcon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/assets/jwplayer/player.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/images/rss.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/images/search.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/assets/jwplayer/glow/sharing/shareIcon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/assets/jwplayer/glow/sharing/shareScreen.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/assets/jwplayer/glow/playlist/sliderCapBottom.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/assets/jwplayer/glow/playlist/sliderCapTop.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/assets/jwplayer/glow/playlist/sliderRail.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/assets/jwplayer/glow/playlist/sliderThumb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/assets/jwplayer/glow/controlbar/timeSliderBuffer.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/assets/jwplayer/glow/controlbar/timeSliderCapLeft.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/assets/jwplayer/glow/controlbar/timeSliderCapRight.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/assets/jwplayer/glow/controlbar/timeSliderProgress.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/assets/jwplayer/glow/controlbar/timeSliderRail.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/assets/jwplayer/glow/controlbar/unmuteButton.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/assets/jwplayer/glow/controlbar/unmuteButtonOver.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.editorconfig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/.editorconfig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitattributes" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/categories/.gitkeep" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/downloads/code/.gitkeep" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.powrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.slugignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CHANGELOG.markdown" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.markdown" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Rakefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/sass/partials/_archive.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/sass/_base.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/sass/partials/sidebar/_base.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/sass/partials/_blog.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/sass/custom/_colors.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_config.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/sass/partials/sidebar/_delicious.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/sass/custom/_fonts.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/sass/partials/_footer.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/sass/partials/sidebar/_googleplus.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/sass/partials/_header.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/sass/base/_layout.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/sass/custom/_layout.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/sass/partials/_navigation.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/sass/_partials.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/sass/partials/sidebar/_pinboard.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/sass/plugins/_plugins.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/sass/partials/_sharing.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/sass/partials/_sidebar.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/sass/base/_solarized.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/sass/custom/_styles.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/sass/partials/_syntax.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/sass/base/_theme.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/sass/base/_typography.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/sass/base/_utilities.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/_includes/custom/asides/about.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/_includes/after_footer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/_includes/custom/after_footer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/_includes/archive_post.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/_includes/article.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/atom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/_includes/post/author.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/backtick_code_block.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/blockquote.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/_includes/post/categories.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/_includes/custom/category_feed.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/category_generator.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/_layouts/category_index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/code_block.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config.ru" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/config_tag.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/_includes/post/date.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/_layouts/default.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/_includes/asides/delicious.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/_includes/disqus.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/_includes/post/disqus_thread.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/_includes/facebook_like.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/_includes/footer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/_includes/custom/footer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/gist_tag.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/_includes/asides/github.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/javascripts/github.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/assets/jwplayer/glow/glow.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/_includes/google_analytics.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/_includes/google_plus_one.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/_includes/asides/googleplus.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/haml.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/_includes/head.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/_includes/custom/head.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/_includes/header.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/_includes/custom/header.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/image_tag.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/include_array.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/include_code.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/blog/archives/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/javascripts/libs/jXHR.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/javascripts/libs/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/jsfiddle.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/javascripts/modernizr-2.0.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/_includes/navigation.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/_includes/custom/navigation.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/javascripts/octopress.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/octopress_filters.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/_layouts/page.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/_includes/asides/pinboard.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/javascripts/pinboard.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/_layouts/post.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/pullquote.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/pygments_code.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/raw.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/_includes/asides/recent_posts.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/render_partial.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/robots.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/rubypants.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/sass/screen.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/_includes/post/sharing.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/javascripts/libs/swfobject-dynamic.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/titlecase.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/javascripts/twitter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.themes/classic/source/_includes/twitter_sharing.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/video_tag.rb" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/arrow-down.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/octocat-small.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javascripts/scale.fix.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/stylesheets/pygment_trac.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/stylesheets/styles.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="orlandophp.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -208,11 +51,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_config.yml">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.50906557" vertical-offset="1939" max-vertical-offset="3917">
-              <caret line="72" column="14" selection-start-line="72" selection-start-column="14" selection-end-line="72" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.054421768" vertical-offset="0" max-vertical-offset="1004">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -233,6 +76,7 @@
       <list>
         <option value="$APPLICATION_PLUGINS_DIR$/scratches/scratch.txt" />
         <option value="$PROJECT_DIR$/_config.yml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -408,7 +252,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32886904" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2679803" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3950739" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4995074" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -507,18 +351,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="999">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.50906557" vertical-offset="1939" max-vertical-offset="3917">
           <caret line="72" column="14" selection-start-line="72" selection-start-column="14" selection-end-line="72" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.054421768" vertical-offset="0" max-vertical-offset="1004">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
