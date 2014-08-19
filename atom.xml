@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Orlando PHP]]></title>
+  <link href="http://orlandophp.github.io/atom.xml" rel="self"/>
+  <link href="http://orlandophp.github.io/"/>
+  <updated>2014-08-19T08:27:36-04:00</updated>
+  <id>http://orlandophp.github.io/</id>
+  <author>
+    <name><![CDATA[Orlando PHP Meetup Members]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+</feed>

@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://orlandophp.github.io/sitemap.xml 
