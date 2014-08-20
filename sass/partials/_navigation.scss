@@ -1,8 +1,6 @@
-body > nav {
-  position: relative;
-  background-color: $nav-bg;
-  padding-top: .35em;
-  padding-bottom: .35em;
+nav {
+  display: table-cell;
+  vertical-align: middle;
   form {
     @include background-clip(padding-box);
     margin: 0; padding: 0;
@@ -12,8 +10,10 @@ body > nav {
       font-family: $sans;
       line-height: 1.1em;
       width: 95%;
-      background-color: #fff;
-      color: #222;
+      @include border-radius(.5em);
+      background-color: lighten($nav-bg, 15);
+      border: 1px solid $nav-border;
+      color: #888;
       &:focus {
         color: #444;
         border-color: #80b1df;
@@ -32,7 +32,7 @@ body > nav {
     font-size: .9em;
     ul {
       @include horizontal-list(0);
-      float: left;
+      float: right;
       display: block;
       padding-top: .15em;
     }
@@ -47,7 +47,6 @@ body > nav {
     a {
       @include link-colors($nav-color, $nav-color-hover, $visited: $nav-color);
       font-family: $sans;
-      text-shadow: lighten($nav-bg, 12) 0 1px;
       float: left;
       text-decoration: none;
       font-size: 1.1em;
@@ -55,9 +54,11 @@ body > nav {
       line-height: 1.5em;
     }
     li + li {
+      border-left: 1px solid $nav-border-left;
       margin-left: .8em;
       a {
         padding-left: .8em;
+        border-left: 1px solid $nav-border-right;
       }
     }
     form {
@@ -88,7 +89,7 @@ body > nav {
   }
 }
 .no-placeholder {
-  body > nav .search {
+  nav .search {
     background: lighten($nav-bg, 15) image-url('search.png') .3em .25em no-repeat;
     text-indent: 1.3em;
   }
@@ -96,6 +97,7 @@ body > nav {
 @mixin mask-subscription-nav($feed: 'rss.png'){
   position: relative; top: 0px;
   text-indent: -999999em;
+  background-color: $nav-border-right;
   border: 0;
   padding: 0;
   &,&:after { @include mask-image($feed); }
@@ -107,7 +109,7 @@ body > nav {
   &:hover:after { background-color: lighten($nav-color, 20); }
 }
 .maskImage {
-  body > nav {
+  nav {
     @media only screen and (min-width: 550px) {
       ul[data-subscription$=email] + form {
         width: $sidebar-width-medium - $pad-medium*2 - $sidebar-pad-medium - 32px;
@@ -123,4 +125,3 @@ body > nav {
   a[rel=subscribe-rss]{ @include mask-subscription-nav('rss.png'); }
   a[rel=subscribe-email]{ @include mask-subscription-nav('email.png'); }
 }
-
