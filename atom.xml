@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
+
   <title><![CDATA[Orlando PHP]]></title>
   <link href="http://orlandophp.github.io/atom.xml" rel="self"/>
   <link href="http://orlandophp.github.io/"/>
-  <updated>2014-08-19T13:42:18-04:00</updated>
+  <updated>2014-08-19T21:04:30-04:00</updated>
   <id>http://orlandophp.github.io/</id>
   <author>
-    <name><![CDATA[Orlando PHP Meetup Members]]></name>
+    <name><![CDATA[David S. Preston, Esq &amp; Patrick Theodore Logan (Wild Stallions Rule)]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
