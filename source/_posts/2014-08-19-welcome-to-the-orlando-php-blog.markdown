@@ -1,0 +1,21 @@
+---
+layout: post
+title: "Welcome to the Orlando PHP Blog"
+date: 2014-08-19 21:07:40 -0400
+author: Patrick D.
+comments: false
+categories: [General, First Post]
+published: true
+---
+
+Welcome, welcome, welcome. This is the start of another step toward bringing the community some content, a forum to voice new ideas, and somewhere to centralize news and information for PHP in Orlando and the greater Central Florida area. We also have the meetup.com [page](http://www.meetup.com/OrlandoPHP/), but we hope this will serve as a compiament to that. Thanks for joining us.
+<!--more-->
+This blog will, time permitting, help us roll out a few new ideas that David, Jeremy and I have been talking about recently. We're really hoping to help build up the community, and help people get involved with PHP. There are a lot of resources out there for newcommers, and there are a lot of experienced PHPers from whose knowledge, experience, and ideas we can all benefit, and hopefully this will be a good crossroad for those things to meet.
+
+Firstly, and most obviously, we are starting this blog. We're hoping that we can get some pretty regular content up to it for you all to read. If you have a desire to get involved with the blog, write a guest post, or just want a single article up, let me know. If you've always wanted to write a blog post, and maybe have been apprehensive or nervous about writing, let me know. We'd love to hear your story or read what you have to say. Writing is less about being a perfect writer, and more about telling people something you'd like to share.
+
+The next thing we'd like to share is something that David touched on in the last meetup. We have started an Orlando PHP Podcast called PHP Diner. It's still in a fledgeling state, and you can't listen to it yet, but we are hoping to create an episode a month and post it up where-ever for you to subscribe and download. David is going to try to keep Jeremy and I reigned in so that the podcast will remain PG, so it should be SFW and ok for the smaller ears. We'll be touching on everything PHP, from developing apps to consulting to you-name-it. Those of you who have been to the recent meetups will probably recognize a few of our first topics.
+
+Lastly: Links of the Week! Hopefully, the LotW will get much better. At the moment, I'm just drafting a quick plain-text email and shuffling it out to the mailing list. What we hope to do is provide a little better presentation to the email and possibly make it a little more useful. We're going to try to keep it simple, and also provide a link for the most recent PHP Diner podcast, and some links to upcoming jobs from our meetup sponsors. Hopefully this will centralize all of the most important and relevant info into one source and eliminate the need for a digest of emails to be sent from the mailing list.
+
+Wow! Some pretty exciting things coming up for Orlando PHP! If you'd like to get involved, help out in any way, or just say "Shello!", feel free to contact me. You can find me on Twitter @pddevins, or in IRC (chat.freenode.net) in #laravel, #phpmentoring, and #orlandophp. I pretty much just hang out in there all day not paying much attention, but if you DM me I'll be available. Thanks for being a part of Orlando PHP, and we'll see you at the next meetup.
