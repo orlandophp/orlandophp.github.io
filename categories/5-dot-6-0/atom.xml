@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 5.6.0 | Orlando PHP Group]]></title>
   <link href="http://orlandophp.github.io/categories/5-dot-6-0/atom.xml" rel="self"/>
   <link href="http://orlandophp.github.io/"/>
-  <updated>2014-08-30T10:40:33-04:00</updated>
+  <updated>2014-08-30T11:11:41-04:00</updated>
   <id>http://orlandophp.github.io/</id>
   <author>
     <name><![CDATA[Orlando PHP User Group]]></name>
@@ -25,6 +25,8 @@
 
 <p>So, lets get down to some examples.</p>
 
+<hr />
+
 <h3>New Features</h3>
 
 <h4>Improved handling of variadic functions and Argument unpacking with <code>...</code></h4>
@@ -33,7 +35,7 @@
 
 <p>We can indicate, in a function&rsquo;s parameter, that we are willing to accept any number of arguments by using the <code>...</code> (elipsis), which eliminates our need to rely on func_get_args().</p>
 
-<pre><code>function add_these(...$numbers) {
+<pre><code class="php Variadic Function Example">function add_these(...$numbers) {
     echo array_sum($numbers);
 }
 add_these(1, 2, 3, 4, 5); // Will return 15
@@ -43,7 +45,7 @@ add_these(1, 2, 3, 4, 5); // Will return 15
 
 <p>The variatic function&rsquo;s parameter can also be type-hinted.</p>
 
-<pre><code>function display_users(User ...$users) {
+<pre><code class="php Variadic Function Example with Type Hinting">function display_users(User ...$users) {
     foreach ($users as $user) {
         echo $user-&gt;name . "\n";
         echo $user-&gt;email . "\n\n";
@@ -54,16 +56,16 @@ display_users($users);
 
 <p><em>Given that <code>$users</code> is 2 User objects with a name and email property, we should see the following output.</em></p>
 
-<pre><code>John Doe
-john.doe@doezer.org
+<pre><code class="bash Example Output">    John Doe
+    john.doe@doezer.org
 
-Jane Doe
-jane.doe@doezer.org
+    Jane Doe
+    jane.doe@doezer.org
 </code></pre>
 
 <p>Unpacking works similarly,</p>
 
-<pre><code>function get_element($index, $array) {
+<pre><code class="php Array Unpacking with '...'">function get_element($index, $array) {
     echo $array[$index];
 }
 
@@ -77,7 +79,7 @@ get_element(...$input); // displays '5'
 
 <p>Ok, a little take home for you. Consider this outout :</p>
 
-<pre><code>function get_element($index, ...$array) {
+<pre><code class="php Unpacking Homework">function get_element($index, ...$array) {
     echo $array[$index];
 }
 
@@ -89,12 +91,12 @@ get_element(...$input);
 
 <p>Typically, we&rsquo;re used to constants being static values:</p>
 
-<pre><code>const THIS_IS_IT = 'It';
+<pre><code class="php Typical, Pre-PHP 5.6 const Syntax">const THIS_IS_IT = 'It';
 </code></pre>
 
 <p>In PHP 5.6, you&rsquo;ll be able to provide an expression for constant values:</p>
 
-<pre><code>const THIS_THING = 5 + 25;
+<pre><code class="php New const Syntax with Scalar Expressions">const THIS_THING = 5 + 25;
 const THIS_IS_NOT_IT = THIS_THING . " is not It";
 
 echo THIS_IS_NOT_IT; // 30 is not It
@@ -108,17 +110,17 @@ echo THIS_IS_NOT_IT; // 30 is not It
 
 <h5>Previously:</h5>
 
-<pre><code>$e = pow(2, 3);
+<pre><code class="php Using 'pow()' for Exponentiation">$e = pow(2, 3);
 echo $e; // 8
 </code></pre>
 
 <h5>Now:</h5>
 
-<pre><code>$e = 2**3;
+<pre><code class="php New, shorter Syntax for Exponentiation">$e = 2**3;
 echo $e; // 8
 </code></pre>
 
-<p><em><code>**</code> ends up a little more concise and seems easier to scan over than the <code>pow()</code> function.</em></p>
+<p><em><code>**</code> ends up a little more concise and seems easier to scan over (to me) than the <code>pow()</code> function.</em></p>
 
 <h4>File downloads exceeding 2 GB</h4>
 
@@ -128,6 +130,8 @@ echo $e; // 8
 
 <p>As for other goodies, go check out the <a href="http://php.net/manual/en/migration56.new-features.php">PHP 5.6</a> page for details and examples of the other features, including <em>GMP operator overloading</em>, the new <code>hash_equals()</code> function, bundled <em>phpdbg</em>, and the <em>new</em> magic method <code>__debugInfo()</code>, to name a few. Although this is a minor update, and there only seem to be a few changes, the changes that are being made with PHP are heralding the future of PHP.</p>
 
+<hr />
+
 <h3>Backward Compatability</h3>
 
 <p>As for backward compatability, there are a few things that have be broken.</p>
@@ -135,15 +139,22 @@ echo $e; // 8
 <ul>
 <li>For starters, Windows 2003 and XP are no longer supported (not too shocking).</li>
 <li><code>self</code>, <code>parent</code>, and <code>static</code> are now <strong>always</strong> (lower) case sensitive.</li>
-<li><p>The PHP logo GUIDs have been removed, effecting the following functions:</p>
-
-<p>  php_logo_guid() <br>
-  php_egg_logo_guid() <br>
-  php_real_logo_guid() <br>
-  zend_logo_guid() <br></p></li>
-<li><p>Plus, a few <a href="http://php.net/manual/en/migration55.incompatible.php">others</a></p></li>
+<li>The PHP logo GUIDs have been removed, effecting the following functions:</li>
 </ul>
 
+
+<pre><code class="php Removed GUID Logo Functions">    php_logo_guid();
+    php_egg_logo_guid();
+    php_real_logo_guid();
+    zend_logo_guid();
+</code></pre>
+
+<ul>
+<li>Plus, a few <a href="http://php.net/manual/en/migration55.incompatible.php">others</a></li>
+</ul>
+
+
+<hr />
 
 <p>Pretty interesting changes so far, perhaps we&rsquo;ll still see one more minor version before PHP 7.</p>
 

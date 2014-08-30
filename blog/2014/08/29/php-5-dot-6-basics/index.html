@@ -101,6 +101,8 @@
 
 <p>So, lets get down to some examples.</p>
 
+<hr />
+
 <h3>New Features</h3>
 
 <h4>Improved handling of variadic functions and Argument unpacking with <code>...</code></h4>
@@ -109,72 +111,114 @@
 
 <p>We can indicate, in a function&rsquo;s parameter, that we are willing to accept any number of arguments by using the <code>...</code> (elipsis), which eliminates our need to rely on func_get_args().</p>
 
-<pre><code>function add_these(...$numbers) {
-    echo array_sum($numbers);
-}
-add_these(1, 2, 3, 4, 5); // Will return 15
-</code></pre>
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Variadic Function Example</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="k">function</span> <span class="nf">add_these</span><span class="p">(</span><span class="o">...</span><span class="nv">$numbers</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">echo</span> <span class="nb">array_sum</span><span class="p">(</span><span class="nv">$numbers</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="nx">add_these</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span> <span class="c1">// Will return 15</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
 
 <p><em>The <code>add_these</code> function will take any number of arguments we throw at it and within our function that <code>$numbers</code> variable becomes an array that can be passed to other functions or iterated through.</em></p>
 
 <p>The variatic function&rsquo;s parameter can also be type-hinted.</p>
 
-<pre><code>function display_users(User ...$users) {
-    foreach ($users as $user) {
-        echo $user-&gt;name . "\n";
-        echo $user-&gt;email . "\n\n";
-    }
-}
-display_users($users);
-</code></pre>
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Variadic Function Example with Type Hinting</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="k">function</span> <span class="nf">display_users</span><span class="p">(</span><span class="nx">User</span> <span class="o">...</span><span class="nv">$users</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">foreach</span> <span class="p">(</span><span class="nv">$users</span> <span class="k">as</span> <span class="nv">$user</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>        <span class="k">echo</span> <span class="nv">$user</span><span class="o">-&gt;</span><span class="na">name</span> <span class="o">.</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
+</span><span class='line'>        <span class="k">echo</span> <span class="nv">$user</span><span class="o">-&gt;</span><span class="na">email</span> <span class="o">.</span> <span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="nx">display_users</span><span class="p">(</span><span class="nv">$users</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
 
 <p><em>Given that <code>$users</code> is 2 User objects with a name and email property, we should see the following output.</em></p>
 
-<pre><code>John Doe
-john.doe@doezer.org
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Example Output</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>John Doe
+</span><span class='line'>john.doe@doezer.org
+</span><span class='line'>
+</span><span class='line'>Jane Doe
+</span><span class='line'>jane.doe@doezer.org
+</span></code></pre></td></tr></table></div></figure></notextile></div>
 
-Jane Doe
-jane.doe@doezer.org
-</code></pre>
 
 <p>Unpacking works similarly,</p>
 
-<pre><code>function get_element($index, $array) {
-    echo $array[$index];
-}
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Array Unpacking with '...'</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="k">function</span> <span class="nf">get_element</span><span class="p">(</span><span class="nv">$index</span><span class="p">,</span> <span class="nv">$array</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">echo</span> <span class="nv">$array</span><span class="p">[</span><span class="nv">$index</span><span class="p">];</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nv">$index</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span>
+</span><span class='line'><span class="nv">$numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">];</span>
+</span><span class='line'><span class="nv">$input</span> <span class="o">=</span> <span class="p">[</span><span class="nv">$index</span><span class="p">,</span> <span class="nv">$numbers</span><span class="p">];</span>
+</span><span class='line'><span class="nx">get_element</span><span class="p">(</span><span class="o">...</span><span class="nv">$input</span><span class="p">);</span> <span class="c1">// displays &#39;5&#39;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
 
-$index = 4;
-$numbers = [1, 2, 3, 4, 5];
-$input = [$index, $numbers];
-get_element(...$input); // displays '5'
-</code></pre>
 
 <p><em>So, passing an array into the function with a preceding <code>...</code> will use each index in the array as a different argument for the function.</em></p>
 
 <p>Ok, a little take home for you. Consider this outout :</p>
 
-<pre><code>function get_element($index, ...$array) {
-    echo $array[$index];
-}
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Unpacking Homework</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="k">function</span> <span class="nf">get_element</span><span class="p">(</span><span class="nv">$index</span><span class="p">,</span> <span class="o">...</span><span class="nv">$array</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">echo</span> <span class="nv">$array</span><span class="p">[</span><span class="nv">$index</span><span class="p">];</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nv">$input</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">];</span>
+</span><span class='line'><span class="nx">get_element</span><span class="p">(</span><span class="o">...</span><span class="nv">$input</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
 
-$input = [1, 2, 3, 4, 5];
-get_element(...$input);
-</code></pre>
 
 <h4>Constant Scalar Expressions</h4>
 
 <p>Typically, we&rsquo;re used to constants being static values:</p>
 
-<pre><code>const THIS_IS_IT = 'It';
-</code></pre>
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Typical, Pre-PHP 5.6 const Syntax</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="k">const</span> <span class="no">THIS_IS_IT</span> <span class="o">=</span> <span class="s1">&#39;It&#39;</span><span class="p">;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
 
 <p>In PHP 5.6, you&rsquo;ll be able to provide an expression for constant values:</p>
 
-<pre><code>const THIS_THING = 5 + 25;
-const THIS_IS_NOT_IT = THIS_THING . " is not It";
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>New const Syntax with Scalar Expressions</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="k">const</span> <span class="no">THIS_THING</span> <span class="o">=</span> <span class="mi">5</span> <span class="o">+</span> <span class="mi">25</span><span class="p">;</span>
+</span><span class='line'><span class="k">const</span> <span class="no">THIS_IS_NOT_IT</span> <span class="o">=</span> <span class="nx">THIS_THING</span> <span class="o">.</span> <span class="s2">&quot; is not It&quot;</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">echo</span> <span class="nx">THIS_IS_NOT_IT</span><span class="p">;</span> <span class="c1">// 30 is not It</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
 
-echo THIS_IS_NOT_IT; // 30 is not It
-</code></pre>
 
 <h4>Exponentiation</h4>
 
@@ -184,17 +228,23 @@ echo THIS_IS_NOT_IT; // 30 is not It
 
 <h5>Previously:</h5>
 
-<pre><code>$e = pow(2, 3);
-echo $e; // 8
-</code></pre>
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Using 'pow()' for Exponentiation</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="nv">$e</span> <span class="o">=</span> <span class="nb">pow</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
+</span><span class='line'><span class="k">echo</span> <span class="nv">$e</span><span class="p">;</span> <span class="c1">// 8</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
 
 <h5>Now:</h5>
 
-<pre><code>$e = 2**3;
-echo $e; // 8
-</code></pre>
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>New, shorter Syntax for Exponentiation</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="nv">$e</span> <span class="o">=</span> <span class="mi">2</span><span class="o">**</span><span class="mi">3</span><span class="p">;</span>
+</span><span class='line'><span class="k">echo</span> <span class="nv">$e</span><span class="p">;</span> <span class="c1">// 8</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<p><em><code>**</code> ends up a little more concise and seems easier to scan over than the <code>pow()</code> function.</em></p>
+
+<p><em><code>**</code> ends up a little more concise and seems easier to scan over (to me) than the <code>pow()</code> function.</em></p>
 
 <h4>File downloads exceeding 2 GB</h4>
 
@@ -204,6 +254,8 @@ echo $e; // 8
 
 <p>As for other goodies, go check out the <a href="http://php.net/manual/en/migration56.new-features.php">PHP 5.6</a> page for details and examples of the other features, including <em>GMP operator overloading</em>, the new <code>hash_equals()</code> function, bundled <em>phpdbg</em>, and the <em>new</em> magic method <code>__debugInfo()</code>, to name a few. Although this is a minor update, and there only seem to be a few changes, the changes that are being made with PHP are heralding the future of PHP.</p>
 
+<hr />
+
 <h3>Backward Compatability</h3>
 
 <p>As for backward compatability, there are a few things that have be broken.</p>
@@ -211,15 +263,27 @@ echo $e; // 8
 <ul>
 <li>For starters, Windows 2003 and XP are no longer supported (not too shocking).</li>
 <li><code>self</code>, <code>parent</code>, and <code>static</code> are now <strong>always</strong> (lower) case sensitive.</li>
-<li><p>The PHP logo GUIDs have been removed, effecting the following functions:</p>
-
-<p>  php_logo_guid() <br>
-  php_egg_logo_guid() <br>
-  php_real_logo_guid() <br>
-  zend_logo_guid() <br></p></li>
-<li><p>Plus, a few <a href="http://php.net/manual/en/migration55.incompatible.php">others</a></p></li>
+<li>The PHP logo GUIDs have been removed, effecting the following functions:</li>
 </ul>
 
+
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Removed GUID Logo Functions</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="nb">php_logo_guid</span><span class="p">();</span>
+</span><span class='line'><span class="nx">php_egg_logo_guid</span><span class="p">();</span>
+</span><span class='line'><span class="nx">php_real_logo_guid</span><span class="p">();</span>
+</span><span class='line'><span class="nb">zend_logo_guid</span><span class="p">();</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+
+<ul>
+<li>Plus, a few <a href="http://php.net/manual/en/migration55.incompatible.php">others</a></li>
+</ul>
+
+
+<hr />
 
 <p>Pretty interesting changes so far, perhaps we&rsquo;ll still see one more minor version before PHP 7.</p>
 
