@@ -13,6 +13,8 @@ PHP 5.6.0 was released yesterday, which marks another milestone for PHP developm
 
 So, lets get down to some examples.
 
+***
+
 ### New Features
 
 #### Improved handling of variadic functions and Argument unpacking with `...`
@@ -21,66 +23,80 @@ Variadic fuctions and argument unpacking are perhaps best explained through exam
 
 We can indicate, in a function's parameter, that we are willing to accept any number of arguments by using the `...` (elipsis), which eliminates our need to rely on func_get_args().
 
-    function add_these(...$numbers) {
-        echo array_sum($numbers);
-    }
-    add_these(1, 2, 3, 4, 5); // Will return 15
+``` php Variadic Function Example
+function add_these(...$numbers) {
+    echo array_sum($numbers);
+}
+add_these(1, 2, 3, 4, 5); // Will return 15
+```
 
 _The `add_these` function will take any number of arguments we throw at it and within our function that `$numbers` variable becomes an array that can be passed to other functions or iterated through._
 
 The variatic function's parameter can also be type-hinted.
 
-    function display_users(User ...$users) {
-        foreach ($users as $user) {
-            echo $user->name . "\n";
-            echo $user->email . "\n\n";
-        }
+``` php Variadic Function Example with Type Hinting
+function display_users(User ...$users) {
+    foreach ($users as $user) {
+        echo $user->name . "\n";
+        echo $user->email . "\n\n";
     }
-    display_users($users);
+}
+display_users($users);
+```
 
 _Given that `$users` is 2 User objects with a name and email property, we should see the following output._
 
+``` bash Example Output
     John Doe
     john.doe@doezer.org
 
     Jane Doe
     jane.doe@doezer.org
 
+```
 
 Unpacking works similarly,
 
-    function get_element($index, $array) {
-        echo $array[$index];
-    }
+``` php Array Unpacking with '...'
+function get_element($index, $array) {
+    echo $array[$index];
+}
 
-    $index = 4;
-    $numbers = [1, 2, 3, 4, 5];
-    $input = [$index, $numbers];
-    get_element(...$input); // displays '5'
+$index = 4;
+$numbers = [1, 2, 3, 4, 5];
+$input = [$index, $numbers];
+get_element(...$input); // displays '5'
+```
 
 _So, passing an array into the function with a preceding `...` will use each index in the array as a different argument for the function._
 
 Ok, a little take home for you. Consider this outout :
 
-    function get_element($index, ...$array) {
-        echo $array[$index];
-    }
+``` php Unpacking Homework
+function get_element($index, ...$array) {
+    echo $array[$index];
+}
 
-    $input = [1, 2, 3, 4, 5];
-    get_element(...$input);
+$input = [1, 2, 3, 4, 5];
+get_element(...$input);
+```
 
 #### Constant Scalar Expressions
 
 Typically, we're used to constants being static values:
 
-    const THIS_IS_IT = 'It';
+``` php Typical, Pre-PHP 5.6 const Syntax
+const THIS_IS_IT = 'It';
+```
 
 In PHP 5.6, you'll be able to provide an expression for constant values:
 
-    const THIS_THING = 5 + 25;
-    const THIS_IS_NOT_IT = THIS_THING . " is not It";
+``` php New const Syntax with Scalar Expressions
+const THIS_THING = 5 + 25;
+const THIS_IS_NOT_IT = THIS_THING . " is not It";
 
-    echo THIS_IS_NOT_IT; // 30 is not It
+echo THIS_IS_NOT_IT; // 30 is not It
+```
 
 #### Exponentiation
 
@@ -90,15 +106,19 @@ For example:
 
 ##### Previously:
 
-    $e = pow(2, 3);
-    echo $e; // 8
+``` php Using 'pow()' for Exponentiation
+$e = pow(2, 3);
+echo $e; // 8
+```
 
 ##### Now:
 
-    $e = 2**3;
-    echo $e; // 8
+``` php New, shorter Syntax for Exponentiation
+$e = 2**3;
+echo $e; // 8
+```
 
-_`**` ends up a little more concise and seems easier to scan over than the `pow()` function._
+_`**` ends up a little more concise and seems easier to scan over (to me) than the `pow()` function._
 
 #### File downloads exceeding 2 GB
 
@@ -108,6 +128,8 @@ With larger and more complex systems, higher resolution photos, and larger docum
 
 As for other goodies, go check out the [PHP 5.6](http://php.net/manual/en/migration56.new-features.php) page for details and examples of the other features, including _GMP operator overloading_, the new `hash_equals()` function, bundled _phpdbg_, and the *new* magic method `__debugInfo()`, to name a few. Although this is a minor update, and there only seem to be a few changes, the changes that are being made with PHP are heralding the future of PHP.
 
+***
+
 ### Backward Compatability
 
 As for backward compatability, there are a few things that have be broken.
@@ -116,14 +138,16 @@ As for backward compatability, there are a few things that have be broken.
 - `self`, `parent`, and `static` are now __always__ (lower) case sensitive.
 - The PHP logo GUIDs have been removed, effecting the following functions:
 
-    php_logo_guid() <br>
-    php_egg_logo_guid() <br>
-    php_real_logo_guid() <br>
-    zend_logo_guid() <br>
+``` php Removed GUID Logo Functions
+    php_logo_guid();
+    php_egg_logo_guid();
+    php_real_logo_guid();
+    zend_logo_guid();
+```
 
 - Plus, a few [others](http://php.net/manual/en/migration55.incompatible.php)
 
-
+---
 
 Pretty interesting changes so far, perhaps we'll still see one more minor version before PHP 7.
 
