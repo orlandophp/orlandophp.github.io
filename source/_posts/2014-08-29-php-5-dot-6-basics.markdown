@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "PHP 5.6 Basics"
+author: Patrick D. <@pddevins>
 date: 2014-08-29 08:42:18 -0400
 comments: true
 categories: [PHP, 5.6.0, Features]
