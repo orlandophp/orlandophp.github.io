@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: 5.6.0 | Orlando PHP Group]]></title>
-  <link href="http://orlandophp.github.io/categories/5-dot-6-0/atom.xml" rel="self"/>
-  <link href="http://orlandophp.github.io/"/>
-  <updated>2014-08-30T11:22:51-04:00</updated>
-  <id>http://orlandophp.github.io/</id>
+  <link href="http://blog.orlandophp.org/categories/5-dot-6-0/atom.xml" rel="self"/>
+  <link href="http://blog.orlandophp.org/"/>
+  <updated>2014-08-30T11:36:20-04:00</updated>
+  <id>http://blog.orlandophp.org/</id>
   <author>
     <name><![CDATA[Orlando PHP User Group]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[PHP 5.6 Basics]]></title>
-    <link href="http://orlandophp.github.io/blog/2014/08/29/php-5-dot-6-basics/"/>
+    <link href="http://blog.orlandophp.org/blog/2014/08/29/php-5-dot-6-basics/"/>
     <updated>2014-08-29T08:42:18-04:00</updated>
-    <id>http://orlandophp.github.io/blog/2014/08/29/php-5-dot-6-basics</id>
+    <id>http://blog.orlandophp.org/blog/2014/08/29/php-5-dot-6-basics</id>
     <content type="html"><![CDATA[<p>PHP 5.6.0 was released yesterday, which marks another milestone for PHP development. With it comes a nice set of new features and a few BC breaks. I&rsquo;ll go over some of the more prominent points and link to a list of everything for your deeper perusal. As for features, the most interesting to me are <em>improved handling of variatic functions</em> and <em>argument unpacking</em> with <code>...</code>, <em>constant scalar expressions</em>, <em>exponentiation</em>, and file downloads that can exceed <em>2 GB</em>. There are a few more, but these are, perhaps, the ones that the average developer may encounter/use on a regular basis.</p>
 
 <!--more-->

@@ -3,35 +3,35 @@
   
   
   <url>
-    <loc>http://orlandophp.github.io/blog/2014/08/29/php-5-dot-6-basics/</loc>
+    <loc>http://blog.orlandophp.org/blog/2014/08/29/php-5-dot-6-basics/</loc>
     <lastmod>2014-08-29T08:42:18-04:00</lastmod>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>http://orlandophp.github.io/blog/2014/08/19/welcome-to-the-orlando-php-blog/</loc>
+    <loc>http://blog.orlandophp.org/blog/2014/08/19/welcome-to-the-orlando-php-blog/</loc>
     <lastmod>2014-08-19T21:07:40-04:00</lastmod>
     <priority>0.8</priority>
   </url>
   
   
   <url>
-    <loc>http://orlandophp.github.io/blog/archives/</loc>
-    <lastmod>2014-08-30T11:22:51-04:00</lastmod>
+    <loc>http://blog.orlandophp.org/blog/archives/</loc>
+    <lastmod>2014-08-30T11:36:20-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>http://orlandophp.github.io/</loc>
-    <lastmod>2014-08-30T11:22:51-04:00</lastmod>
+    <loc>http://blog.orlandophp.org/</loc>
+    <lastmod>2014-08-30T11:36:20-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
-    <loc>http://orlandophp.github.io/about/</loc>
-    <lastmod>2014-08-30T11:22:51-04:00</lastmod>
+    <loc>http://blog.orlandophp.org/about/</loc>
+    <lastmod>2014-08-30T11:36:20-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

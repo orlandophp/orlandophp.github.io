@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: first post | Orlando PHP Group]]></title>
-  <link href="http://orlandophp.github.io/categories/first-post/atom.xml" rel="self"/>
-  <link href="http://orlandophp.github.io/"/>
-  <updated>2014-08-30T11:22:51-04:00</updated>
-  <id>http://orlandophp.github.io/</id>
+  <link href="http://blog.orlandophp.org/categories/first-post/atom.xml" rel="self"/>
+  <link href="http://blog.orlandophp.org/"/>
+  <updated>2014-08-30T11:36:20-04:00</updated>
+  <id>http://blog.orlandophp.org/</id>
   <author>
     <name><![CDATA[Orlando PHP User Group]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Welcome to the Orlando PHP Blog]]></title>
-    <link href="http://orlandophp.github.io/blog/2014/08/19/welcome-to-the-orlando-php-blog/"/>
+    <link href="http://blog.orlandophp.org/blog/2014/08/19/welcome-to-the-orlando-php-blog/"/>
     <updated>2014-08-19T21:07:40-04:00</updated>
-    <id>http://orlandophp.github.io/blog/2014/08/19/welcome-to-the-orlando-php-blog</id>
+    <id>http://blog.orlandophp.org/blog/2014/08/19/welcome-to-the-orlando-php-blog</id>
     <content type="html"><![CDATA[<p>Welcome, welcome, welcome. This is the start of another step toward bringing the community some content, a forum to voice new ideas, and somewhere to centralize news and information for PHP in Orlando and the greater Central Florida area. We also have the meetup.com page, but we hope this will serve as a compliment to that. Thanks for joining us.</p>
 
 <!--more-->
